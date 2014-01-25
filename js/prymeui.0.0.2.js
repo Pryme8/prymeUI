@@ -5,7 +5,44 @@ Pryme8@gmail.com - contact me with questions
  */
 
 
+$(document).ready(function(){
+  
+  $('body').append('<div class=prymeScreenLock></div>');
+    
+});
+
+var prymeScreenLockCount = 0;
+function prymeScreenLock(s){
+    if(s==='lock'){
+        prymeScreenLockCount++;
+    }else if(s==='unlock'){
+        prymeScreenLockCount--;
+    }
+    
+    if(prymeScreenLockCount===0){
+        $('.prymeScreenLock').fadeOut(350, function () {});
+    }else{
+        $('.prymeScreenLock').fadeIn(350, function () {});
+    }
+    
+    if ($('.prymeScreenLock').is(':visible')) {
+        // it's visible, fade out and Unlock keyboard
+        document.onkeydown = function (e) {
+            return e;
+        };
+    }
+    else {
+        // lock screen and disable keyboard
+        document.onkeydown = function (e) {
+            return false;
+        };
+        
+    }
+}
+
 $.fn.prymeUI = function ( options ){
+    
+    prymeScreenLock('lock');
    var prymeString = "";
    var originalElement = $(this);
    
@@ -69,5 +106,5 @@ $( document ).on( "click",".prymeSelectBox span div", function(  ) {
    }
    
     
-    
+    prymeScreenLock('unlock');
 };
