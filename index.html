@@ -10,9 +10,14 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="./css/main.css">
         <link rel="stylesheet" type="text/css" href="./css/prymeui.css">
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true"></script>
         <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/run_prettify.js"></script>
+        
         <script src="js/main.js"></script>
-         <script src="js/prymeui.0.0.2.js"></script>
+        <script src="js/prymeui.0.0.2.js"></script>
+         
+         
          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
@@ -21,7 +26,7 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
         <div class='aboveFold'><BR>
         <h1>PRYMEUI<span>a jQuery plugin!</span><span>version 0.0.2</span></h1><BR>
         <div class='contentBox'><span class='titleSpan'>Usage:</span><BR>$(target).prymeui();</div><BR>
-        <div class='topMenu'><div class='bigButton'>DOWNLOAD</div><div class='bigButton' onClick='slideFold("up");'>EXAMPLES</div><div class='bigButton'>CONTACT</div></div>
+        <div class='topMenu'><div class='bigButton'><a href='https://github.com/Pryme8/prymeUI' target='_blank'>DOWNLOAD</a></div><div class='bigButton' onClick='slideFold("up");'>EXAMPLES</div><div class='bigButton'>CONTACT</div></div>
         <div class='footArea foldDown' onClick='slideFold("down");'></div>
         </div>
         <div class='belowFold'>
@@ -42,12 +47,23 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
         <div class='contentBox exampleSection' id='Input_Elements'><span class='titleSpan'>//Input Elements</span>
         
         <BR><div class='contentBox exampleSection' id='input'><span class='titleSpan'>&#60;input&#62;</span>
+           <!--?prettify lang=html?-->
+           <pre class="prettyprint lang-basic"><code>&#60;input id='inputText' name='inputText' type='text' placeholder='input box...' value=''&#62;</code></pre>  
+           
         <div class='withoutBox'><span>regular</span><BR><center><input id='inputText' name='inputText' type='text' placeholder='input box...' value='' /></center></div>
         <div class='withBox'><span>prymeUI</span><BR><center><input id='inputText' name='inputText' type='text' placeholder='input box...' value='' /></center></div>
         <script>$('#input .withBox #inputText').prymeUI();</script>
         </div><BR>
        
         <div class='contentBox exampleSection' id='select'><span class='titleSpan'>&#60;select&#62;</span>
+            
+            <!--?prettify lang=html?-->
+           <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'&#62;
+&#60;option value='1'&#62;Option 1&#60;/option&#62;
+&#60;option value='2'&#62;Option 2&#60;/option&#62;
+&#60;option value='3'&#62;Option 3&#60;/option&#62;
+&#60;/select&#62;</code></pre>
+           
         <div class='withoutBox'><span>regular</span><BR><center><select id='dropBox' name='dropBox'><option value='1'>Option 1</option><option value='2'>Option 2</option><option value='3'>Option 3</option></select></center></div>
         <div class='withBox'><span>prymeUI</span><BR><center><select id='dropBox' name='dropBox'><option value='1'>Option 1</option><option value='2'>Option 2</option><option value='3'>Option 3</option></select></center></div>
         <script>$('#select .withBox #dropBox').prymeUI();</script>
