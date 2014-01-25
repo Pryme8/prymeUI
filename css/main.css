@@ -305,5 +305,9 @@ body {
      font-size: 1em;
  }
  
- 
+      @media only screen and (max-width: 480px){
     
+         .aboveFold h1{
+             font-size: 18px;
+         }
+  }
