@@ -106,5 +106,5 @@ $( document ).on( "click",".prymeSelectBox span div", function(  ) {
    }
    
     
-    prymeScreenLock('unlock');
+    
 };
