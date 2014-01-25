@@ -341,7 +341,15 @@ body {
          }
          
          .belowFold .leftCol{
-        font-size:16px;
-    
-}
+        font-size:12px;
+        width:25%;
+         }
+         .leftCol ul{
+        margin-left: -2em;
+        }
+        
+        .belowFold .rightCol{
+        left:25%;
+        width:75%;
+         }
   }
