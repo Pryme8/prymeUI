@@ -4,19 +4,14 @@ use are you see fit.
 Pryme8@gmail.com - contact me with questions
  */
 
-
-$(document).ready(function(){
-  
-  $('body').append('<div class=prymeScreenLock></div>');
-    
-});
-
 var prymeScreenLockCount = 0;
 function prymeScreenLock(s){
+     
     if(s==='lock'){
         prymeScreenLockCount++;
     }else if(s==='unlock'){
-        prymeScreenLockCount--;
+        prymeScreenLockCount-=1;
+        
     }
     
     if(prymeScreenLockCount===0){
@@ -42,7 +37,14 @@ function prymeScreenLock(s){
 
 $.fn.prymeUI = function ( options ){
     
-    prymeScreenLock('lock');
+
+    
+    if(!$('#prymeScreenLock').length){
+        $('body').append('<div class="prymeScreenLock"></div>');
+        
+    }
+    
+   
    var prymeString = "";
    var originalElement = $(this);
    
@@ -51,6 +53,8 @@ var settings = $.extend({
 // These are the defaults.
 
 }, options );
+
+
 
 function createPrymeElement(t){
     $(t).css({display:'none'}).before(prymeString);
@@ -106,5 +110,5 @@ $( document ).on( "click",".prymeSelectBox span div", function(  ) {
    }
    
     
-    
+   
 };
