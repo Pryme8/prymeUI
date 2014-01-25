@@ -320,4 +320,8 @@ body {
              top: auto;
              right: auto;
          }
+         
+               .contentBox .titleSpan{
+             font-size: 1em;
+         }
   }
