@@ -286,18 +286,20 @@ body {
      display:inline-block;
      vertical-align: top;
      padding:0.1em 0.1em 0.1em 0.1em;
-     margin-top:0.2em;
+     
      width:auto;
  
  }
  .withoutBox{
       margin: 0 1% 0 auto;  
-      border:thin solid tomato; 
+      border:thin solid tomato;
+      margin-top:0.2em;
  }
  
  .withBox{
     border:thin solid mediumblue;
      margin: 0 auto 0 1%;
+     margin-top:0.2em;
  }
  
  .withoutBox span, .withBox span{
