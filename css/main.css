@@ -354,15 +354,17 @@ body {
     /* Portrait styles */
         .belowFold .leftCol{
         font-size:12px;
-        width:30%;
+        width:34%;
          }
          .leftCol ul{
         margin-left: -2em;
         }
-        
+        .leftCol ul ul{
+        margin-left: -2.5em;
+        }
         .belowFold .rightCol{
-        left:30%;
-        width:70%;
+        left:34%;
+        width:66%;
          }
 }
 /* Landscape */
