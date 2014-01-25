@@ -284,6 +284,7 @@ body {
  .withoutBox, .withBox{
      position:relative;
      display:inline-block;
+     vertical-align: top;
      padding:1em 0 1em 0;
      width:auto;
  
