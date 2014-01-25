@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : Jan 24, 2014, 1:58:47 PM
     Author     : Andrew V Butt Sr.
@@ -353,3 +348,24 @@ body {
         width:75%;
          }
   }
+  
+  /* Portrait */
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+        .belowFold .leftCol{
+        font-size:12px;
+        width:30%;
+         }
+         .leftCol ul{
+        margin-left: -2em;
+        }
+        
+        .belowFold .rightCol{
+        left:30%;
+        width:70%;
+         }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+    /* Landscape styles */
+}
