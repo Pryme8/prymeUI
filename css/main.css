@@ -293,13 +293,13 @@ body {
  .withoutBox{
       margin: 0 1% 0 auto;  
       border:thin solid tomato;
-      margin-top:0.2em;
+      margin-top:1em;
  }
  
  .withBox{
     border:thin solid mediumblue;
      margin: 0 auto 0 1%;
-     margin-top:0.2em;
+     margin-top:1em;
  }
  
  .withoutBox span, .withBox span{
