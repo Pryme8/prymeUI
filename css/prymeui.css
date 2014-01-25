@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 25, 2014, 12:16:37 AM
+    Author     : Andrew V Butt Sr. Pryme8@gmail.com
+*/
+
+.prymeSelectBox{
+    position: relative;
+    font-family : 'arial', sans-serif;
+    font-weight : bold;
+    font-size : 16px;
+    line-height : 1.5em;
+    margin-bottom : 6px;
+    width:120px;
+    height: auto;
+    margin-bottom: 1.58em;
+    display: inline-block;
+    pointer-events: auto;
+    text-align: left;
+    
+  
+}
+
+
+.prymeSelectBox span{
+    position: absolute;
+    padding:0.2em;
+    background-color: #fff;
+    border : #dadada solid 1px;
+    color:#000;
+    text-shadow:none;
+    overflow:hidden;
+    width:100%;
+      
+}
+
+
+
+
+.prymeSelectBox span:hover, .prymeSelectBox span:active, .prymeSelectBox span:focus{
+    border-color : #9ecaed;
+    box-shadow : 0 0 5px #9ecaed;
+    
+}
+
+
+
+.prymeSelectBox span:before{
+    position: absolute;
+    right:0;
+    height: 1.9em;
+    width: 2em;
+    top:0;
+    content: '';
+    //-webkit-border-radius: 0 2px 2px 0;
+    //border-radius: 0 2px 2px 0;
+    background-color: #dadada;
+    cursor: pointer;
+    
+    
+}
+
+.prymeSelectBox span:after{
+        position: absolute;
+        content: '';
+        width: 0; 
+	height: 0; 
+        right:0.6em;
+        top:0.75em;
+	border-left: 0.35em solid transparent;
+	border-right: 0.35em solid transparent;
+	border-top: 0.5em solid #777;
+        pointer-events: none;
+}
+
+.prymeSelectBox span:hover:after, .prymeSelectBox span:focus:after{
+	border-top: 0.5em solid #fff;
+ }
+ 
+ .prymeSelectBox span:active:after{
+     border-top: 0.5em solid #000;
+ }
+ 
+ .prymeSelectBox .selected{
+    background:none;
+    display:block;
+    color: #7BACD2;
+   }
+ 
+ .prymeSelectBox span div{
+    background:#EEE;
+    display:none;
+    cursor: pointer;
+    padding-right: 1.5em;
+    
+}
+
+.prymeSelectBox span div:hover{
+    color:#777;
+        
+}
+
+.focus{
+    z-index: +1;
+}
+
+.focus span{
+    overflow-y:scroll;
+}
+
+ .focus span div{
+     display:block;
+ }
+ 
+ /* INPUT BOX */
+ 
+ .prymeInputBox {
+    border-radius : 6px;
+    width : 120px;
+    height : 1.5em;
+    font-size : 1em;
+    line-height : 1.5em;
+    border : #dadada solid 1px;
+    padding : 6px;
+}
+ 
+.prymeInputBox:focus, .prymeInputBox:hover{
+    outline : none;
+    border-color : #9ecaed;
+    box-shadow : 0 0 5px #9ecaed;
+}
+
+ 
+ 
