@@ -312,7 +312,12 @@ body {
              font-size: 36px;
          }
          .aboveFold h1 span{
+             display: block;
              position: relative;
              font-size: 16px;
+             margin: 0 auto;
+             left: auto;
+             top: auto;
+             right: auto;
          }
   }
