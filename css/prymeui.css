@@ -63,7 +63,7 @@
 .prymeSelectBox span:before{
     position: absolute;
     right:0;
-    height: 1.9em;
+    height: 1.5em;
     width: 2em;
     top:0;
     content: '';
@@ -133,8 +133,8 @@
  .focus span:before{
     position: absolute;
     right:0;
-    height: 1.7em;
-    width: 1em;
+    height: 1.5em;
+    width: 2em;
     top:0;
     content: '';
     //-webkit-border-radius: 0 2px 2px 0;
@@ -145,18 +145,6 @@
     
 }
 
-.focus span:after{
-        position: absolute;
-        content: '';
-        width: 0; 
-	height: 0; 
-        right:0.2em;
-        top:0.6em;
-	border-left: 0.35em solid transparent;
-	border-right: 0.35em solid transparent;
-	border-top: 0.5em solid #777;
-        pointer-events: none;
-}
 
 
 .focus{
