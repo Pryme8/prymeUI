@@ -1,4 +1,4 @@
-prymeUI : http://pryme8.github.io/prymeUI/
+prymeUI api : http://pryme8.github.io/prymeUI/
 =======
 
 jQuery plugin that allows for automatic styling of DOM elements.
