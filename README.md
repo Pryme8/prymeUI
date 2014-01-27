@@ -8,13 +8,13 @@ In some cases the element is replaced with a prymeElement... though the original
 
 Current support:
 
-input - CSS
+<b>input</b> - CSS
 (I will be looking to add regEx expressions that you can tie to input boxes and have prymeUI check them or strip the input to provided regex strings)
 
-select - CSS/JS
+<b>select</b> - CSS/JS
 (almost done implementing this feature, last step is multiselect box which will not be that hard I jsut have not had time.
 
-toolTips - CSS/HTML data-tag
+<b>toolTips</b> - CSS/HTML data-tag
 (add provided classes for direction of tool tip, and then add the html string in the element to have prymeUI's CSS detect it and create dynamic tooltips.)
 
 
