@@ -3,91 +3,183 @@
 Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
 -->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>prymeUI</title>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
-        <link rel="stylesheet" type="text/css" href="./css/prymeui.css">
-        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true"></script>
-        <script src="js/jquery-2.0.3.min.js"></script>
-        <script src="js/run_prettify.js"></script>
-        
-        <script src="js/main.js"></script>
-        <script src="js/prymeui.0.0.2.js"></script>
-         
-         
-         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    </head>
-    <body>
-       
-        <div class='wrapFix'>
-        <div class='aboveFold'><BR>
-        <h1>prymeUI<span>a jQuery plugin!</span><span>version 0.0.2</span></h1><BR>
-        <div class='contentBox'><span class='titleSpan'>Usage:</span><BR>$(target).prymeui();</div><BR>
-        <div class='topMenu'><div class='bigButton'><a href='https://github.com/Pryme8/prymeUI' target='_blank'>DOWNLOAD</a></div><div class='bigButton' onClick='slideFold("up");'>EXAMPLES</div><div class='bigButton'><a href='mailto:Pryme8@gmail.com'>CONTACT</a></div></div>
-        <div class='footArea foldDown' onClick='slideFold("down");'></div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>prymeUI</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/prymeui.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true"></script>
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/run_prettify.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/prymeui.0.0.4.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+    <div class='wrapFix'>
+        <div class='aboveFold'>
+            <BR>
+            <h1>prymeUI<span>a jQuery plugin!</span><span>version 0.0.4</span></h1>
+            <BR>
+            <div class='contentBox'><span class='titleSpan'>Usage:</span>
+                <BR>$(target).prymeui();</div>
+            <BR>
+            <div class='topMenu'>
+                <div class='bigButton'><a href='https://github.com/Pryme8/prymeUI' target='_blank'>DOWNLOAD</a>
+                </div>
+                <div class='bigButton' onClick='slideFold("up");'>EXAMPLES</div>
+                <div class='bigButton'><a href='mailto:Pryme8@gmail.com'>CONTACT</a>
+                </div>
+            </div>
+            <div class='footArea foldDown' onClick='slideFold("down");'></div>
         </div>
         <div class='belowFold'>
-        <div class='leftCol'>
-        <ul>
-        <li><a><span>Input Elements</span></a>
-        <ul><li><a><span>input</span></a></li>
-         <li><a><span>select</span></a>
-          <li><a><span>radioButtons</span></a>
-        </li></ul>
-    
-   
-        </ul>
-        
-        </div>
-        <div class='rightCol'>
-       
-        <div class='contentBox exampleSection' id='Input_Elements'><span class='titleSpan'>//Input Elements</span>
-        
-        <BR><div class='contentBox exampleSection' id='input'><span class='titleSpan'>&#60;input&#62;</span>
-           <!--?prettify lang=html?-->
-        <pre class="prettyprint lang-basic"><code>&#60;input id='inputText' name='inputText' type='text' placeholder='input box...' value=''&#62;</code></pre>  
-           
-        <div class='withoutBox'><span>regular</span><BR><center><input id='inputText' name='inputText' type='text' placeholder='input box...' value='' /></center></div>
-        <div class='withBox'><span>prymeUI</span><BR><center><input id='inputText' name='inputText' type='text' placeholder='input box...' value='' /></center></div>
-        <script>$('#input .withBox #inputText').prymeUI();</script>
-        </div><BR>
-       
-        <div class='contentBox exampleSection' id='select'><span class='titleSpan'>&#60;select&#62;</span>
-            Supports:
-            <ul>
-                <li class='yesSupport'>Name</li>
-                <li class='yesSupport'>ID</li>
-                <li class='yesSupport'>Value</li>
-                <li class='noSupport'>autofocus</li>
-                <li class='noSupport'>disabled</li>
-                <li class='noSupport'>form</li>
-                <li class='noSupport'>multiple</li>
-                <li class='noSupport'>required</li>
-                <li class='noSupport'>size</li>
-            </ul>
-            <!--?prettify lang=html?-->
-           <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'&#62;
+            <div class='leftCol'>
+                <ul>
+                    <li><a><span>Input Elements</span></a>
+                        <ul>
+                            <li><a><span>input</span></a>
+                            </li>
+                            <li><a><span>select</span></a>
+                                <li><a><span>radioButtons</span></a>
+                                </li>
+                        </ul>
+
+
+                </ul>
+
+            </div>
+            <div class='rightCol'>
+
+                <div class='contentBox exampleSection' id='Input_Elements'><span class='titleSpan'>//Input Elements</span>
+
+                    <BR>
+                    <div class='contentBox exampleSection' id='input'><span class='titleSpan'>&#60;input&#62;</span>
+                        <!--?prettify lang=html?-->
+                        <pre class="prettyprint lang-basic"><code>&#60;input id='inputText' name='inputText' type='text' placeholder='input box...' value=''&#62;</code></pre> 
+
+                        <div class='withoutBox'><span>regular</span>
+                            <BR>
+                            <center>
+                                <input id='inputText' name='inputText' type='text' placeholder='input box...' value='' />
+                            </center>
+                        </div>
+                        <div class='withBox'><span>prymeUI</span>
+                            <BR>
+                            <center>
+                                <input id='inputText' name='inputText' type='text' placeholder='input box...' value=''/>
+                            </center>
+                        </div>
+                        <script>
+                            $('#input .withBox #inputText').prymeUI();
+                        </script>
+                    </div>
+                    <BR>
+
+                    <div class='contentBox exampleSection' id='select'><span class='titleSpan'>&#60;select&#62;</span>
+                        Supports:
+                        <ul>
+                            <li class='yesSupport'>Name<BR><span>Passes the element name from the original object</span></li>
+                            <li class='yesSupport'>ID<BR><span>Passes the element id from the original object</span></li>
+                            <li class='yesSupport'>Value<BR><span>Passes the original value of the element and makes the prymeElement set to that value</span></li>
+                            <li class='noSupport'>autofocus</li>
+                            <li class='yesSupport'>disabled<BR><span>Checks to see if the element is disabled and if so adds the class 'disable' to the prymeElement.<BR>---I will be looking to add a listener for when ever this elements original is changed with script to be disabled or enabled that the prymeElement will follow suit.</span></li>
+                            <li class='untestedSupport'>form<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
+                            <li class='noSupport'>multiple</li>
+                            <li class='untestedSupport'>required<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
+                            <li class='yesSupport'>size</li>
+                        </ul>
+                        
+                        
+                        <!--?prettify lang=html?-->
+                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'&#62;
 &#60;option value='1'&#62;Option 1&#60;/option&#62;
-&#60;option value='2'&#62;Option 2&#60;/option&#62;
+&#60;option value='2' selected='selected'&#62;Option 2&#60;/option&#62;
 &#60;option value='3'&#62;Option 3&#60;/option&#62;
 &#60;/select&#62;</code></pre>
-           
-        <div class='withoutBox'><span>regular</span><BR><center><select id='dropBox' name='dropBox'><option value='1'>Option 1</option><option value='2'>Option 2</option><option value='3'>Option 3</option></select></center></div>
-        <div class='withBox'><span>prymeUI</span><BR><center><select id='dropBox' name='dropBox'><option value='1'>Option 1</option><option value='2'>Option 2</option><option value='3'>Option 3</option></select></center></div>
-        <script>$('#select .withBox #dropBox').prymeUI();</script>
-        </div><BR>
-       
-        <div class='contentBox exampleSection' id='radioButtons'><span class='titleSpan'>&#60;Radio&#62;</span>
+Standard DropBox...<BR>
+                        <div class='withoutBox'><span>regular</span>
+                            <BR>
+                            <center>
+                                <select id='dropBox' name='dropBox'>
+                                    <option value='1'>Option 1</option>
+                                    <option value='2' selected='selected'>Option 2</option>
+                                    <option value='3'>Option 3</option>
+                                </select>
+                            </center>
+                        </div>
+                        <div class='withBox'><span>prymeUI</span>
+                            <BR>
+                            <center>
+                                <select id='dropBox' name='dropBox'>
+                                    <option value='1'>Option 1</option>
+                                    <option value='2' selected='selected'>Option 2</option>
+                                    <option value='3'>Option 3</option>
+                                </select>
+                            </center>
+                        </div>
+ 
+                        <!--?prettify lang=html?-->
+                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox  size='2''&#62;
+&#60;option value='1'&#62;Option 1&#60;/option&#62;
+&#60;option value='2' selected='selected'&#62;Option 2&#60;/option&#62;
+&#60;option value='3'&#62;Option 3&#60;/option&#62;
+&#60;/select&#62;</code></pre>
+Select box with Size set.<BR>
+                        <div class='withoutBox'><span>regular</span>
+                            <BR>
+                            <center>
+                                <select id='dropBox2' name='dropBox2' size='2'>
+                                    <option value='1'>Option 1</option>
+                                    <option value='2' selected='selected'>Option 2</option>
+                                    <option value='3'>Option 3</option>
+                                </select>
+                            </center>
+                        </div>
+                        <div class='withBox'><span>prymeUI</span>
+                            <BR>
+                            <center>
+                                <select id='dropBox2' name='dropBox2' size='2'>
+                                    <option value='1'>Option 1</option>
+                                    <option value='2' selected='selected'>Option 2</option>
+                                    <option value='3'>Option 3</option>
+                                </select>
+                            </center>
+                        </div>
+                        <script>
+                            $('#select .withBox').each(function(){
+                            $(this).find('select').prymeUI();
+                            });
+                        </script>
+                        
+                    </div>
+                    <BR>
+
+                    <div class='contentBox exampleSection' id='radioButtons'><span class='titleSpan'>&#60;Radio&#62;</span>
+                    </div>
+
+
+                </div>
+                <BR><BR>
+                     <div class='contentBox exampleSection' id='toolTips'><span class='titleSpan'>//Tool Tip Support</span>
+                         If you want to apply a tool tip to your links simply add a class for the direction (tip-up, tip-down, tip-left, tip-right) and the data attribute "data-prymetip='What ever you want your Tip to say!'"<BR><BR>
+                         <center><a href="http://pryme8.github.io/prymeUI/" class="tip-up" data-prymetip="Up direction PrymeTip">Direction Up</a><BR><BR>
+                             <a href="http://pryme8.github.io/prymeUI/" class="tip-down" data-prymetip="Down direction PrymeTip">Direction Down</a><BR><BR>
+                             <a href="http://pryme8.github.io/prymeUI/" class="tip-right" data-prymetip="Right direction PrymeTip">Direction Right</a><BR><BR>
+                             <a href="http://pryme8.github.io/prymeUI/" class="tip-left" data-prymetip="Right direction PrymeTip">Direction Left</a><BR>
+                         </center>
+                     </div>
+            </div>
         </div>
-        
-     
-        </div>
-        
-        </div>
-        </div>
-        </div>
-            </body>
+    </div>
+</body>
+
 </html>

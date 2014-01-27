@@ -62,24 +62,35 @@ function createPrymeElement(t){
    
    //DROP DOWN MENU
    if($(this).is('select')){
-       prymeString ="<div class='prymeSelectBox' id='"+$(this).attr('id')+"' name='"+$(this).attr('name')+"'>";
+       prymeString ="<span class='elementFix'><div class='prymeSelectBox";
+       if($(this).is(':disabled')){
+       prymeString+=" disable";    
+       }
+       if($(this).attr('size')){
+       prymeString+=" sizeBox";    
+       }
+       
+       prymeString+="' id='"+$(this).attr('id')+"' name='"+$(this).attr('name')+"'>";
        prymeString+='<span class="prymeSelectBox_OptionArea">';
 
         $(this).children('option').each(function(){
-     
-           if($(this).attr('value')===$(this).parent('select').val()){
+            
+           if($(this).attr('value')===originalElement.val()){
                prymeString+='<div class="selected" id="'+$(this).attr("value")+'">'+$(this).text()+'</div>';
            }else{
+
                prymeString+='<div id="'+$(this).attr("value")+'">'+$(this).text()+'</div>';
-           }
+           
+         }
            
             
        });
        
        prymeString+='</span>';
-       prymeString +="</div>";
+       prymeString +="</div></span>";
+   
        
-       $( document ).on( "click",".prymeSelectBox", function(  ) {
+       $( document ).on( "click",".prymeSelectBox#"+$(this).attr('id'), function(  ) {
         if($(this).hasClass("focus")){
          $(this).removeClass("focus");
                 }else{
@@ -88,7 +99,7 @@ function createPrymeElement(t){
   
 });
 
-$( document ).on( "click",".prymeSelectBox span div", function(  ) {
+$( document ).on( "click",".prymeSelectBox#"+$(this).attr('id')+" span div", function(  ) {
    
    $(this).parent().children("div").removeClass("selected");
    $(this).addClass("selected");
@@ -97,12 +108,19 @@ $( document ).on( "click",".prymeSelectBox span div", function(  ) {
 });
        
        createPrymeElement($(this));
+       if($(this).attr('size')){
+           
+           $('.prymeSelectBox#'+$(this).attr('id')).children('span').css({overflow_y:'auto',height:$(this).attr('size')*1.5+"em"});
+
+       }
+       
+  
    }
    
    //INPUT ELEMENT
     if($(this).is('input')){
        prymeString ="<input class='prymeInputBox' id='"+$(this).attr('id')+"' name='"+$(this).attr('name')+"' placeholder='"+$(this).attr('placeholder')+"' value='"+$(this).val()+"'>";
-       $( document ).on( "change",".prymeInputBox", function(  ) {
+       $( document ).on( "change",".prymeInputBox#"+$(this).attr('id'), function(  ) {
                originalElement.val($(this).val());
         });
        prymeString +="</input>";      
