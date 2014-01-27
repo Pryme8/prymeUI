@@ -322,7 +322,9 @@ body {
 }
  
  
- 
+.contentBox ul{
+    width:160px;
+}
  
  
   @media screen and (max-width: 765px){
