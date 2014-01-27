@@ -313,6 +313,18 @@ body {
  }
  
  
+ .yesSupport{
+    background-color: mediumblue;
+}
+
+.noSupport{
+    background-color: tomato;
+}
+ 
+ 
+ 
+ 
+ 
   @media screen and (max-width: 765px){
     
          .aboveFold h1{

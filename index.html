@@ -48,7 +48,7 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
         
         <BR><div class='contentBox exampleSection' id='input'><span class='titleSpan'>&#60;input&#62;</span>
            <!--?prettify lang=html?-->
-           <pre class="prettyprint lang-basic"><code>&#60;input id='inputText' name='inputText' type='text' placeholder='input box...' value=''&#62;</code></pre>  
+        <pre class="prettyprint lang-basic"><code>&#60;input id='inputText' name='inputText' type='text' placeholder='input box...' value=''&#62;</code></pre>  
            
         <div class='withoutBox'><span>regular</span><BR><center><input id='inputText' name='inputText' type='text' placeholder='input box...' value='' /></center></div>
         <div class='withBox'><span>prymeUI</span><BR><center><input id='inputText' name='inputText' type='text' placeholder='input box...' value='' /></center></div>
@@ -56,7 +56,18 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
         </div><BR>
        
         <div class='contentBox exampleSection' id='select'><span class='titleSpan'>&#60;select&#62;</span>
-            
+            Supports:
+            <ul>
+                <li class='yesSupport'>Name</li>
+                <li class='yesSupport'>ID</li>
+                <li class='yesSupport'>Value</li>
+                <li class='noSupport'>autofocus</li>
+                <li class='noSupport'>disabled</li>
+                <li class='noSupport'>form</li>
+                <li class='noSupport'>multiple</li>
+                <li class='noSupport'>required</li>
+                <li class='noSupport'>size</li>
+            </ul>
             <!--?prettify lang=html?-->
            <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'&#62;
 &#60;option value='1'&#62;Option 1&#60;/option&#62;
