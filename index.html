@@ -90,7 +90,7 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
                             <li class='yesSupport'>Name<BR><span>Passes the element name from the original object</span></li>
                             <li class='yesSupport'>ID<BR><span>Passes the element id from the original object</span></li>
                             <li class='yesSupport'>Value<BR><span>Passes the original value of the element and makes the prymeElement set to that value</span></li>
-                            <li class='noSupport'>autofocus</li>
+                            <li class='yesSupport'>autofocus<BR><span>Checks for the attribute autofocus set in the original Element.</span></li>
                             <li class='yesSupport'>disabled<BR><span>Checks to see if the element is disabled and if so adds the class 'disable' to the prymeElement.<BR>---I will be looking to add a listener for when ever this elements original is changed with script to be disabled or enabled that the prymeElement will follow suit.</span></li>
                             <li class='untestedSupport'>form<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
                             <li class='noSupport'>multiple</li>
@@ -128,7 +128,7 @@ Standard DropBox...<BR>
                         </div>
  
                         <!--?prettify lang=html?-->
-                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox  size='2''&#62;
+                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox  size='3''&#62;
 &#60;option value='1'&#62;Option 1&#60;/option&#62;
 &#60;option value='2' selected='selected'&#62;Option 2&#60;/option&#62;
 &#60;option value='3'&#62;Option 3&#60;/option&#62;
@@ -137,7 +137,7 @@ Select box with Size set.<BR>
                         <div class='withoutBox'><span>regular</span>
                             <BR>
                             <center>
-                                <select id='dropBox2' name='dropBox2' size='2'>
+                                <select id='dropBox2' name='dropBox2' size='3'>
                                     <option value='1'>Option 1</option>
                                     <option value='2' selected='selected'>Option 2</option>
                                     <option value='3'>Option 3</option>
@@ -147,7 +147,7 @@ Select box with Size set.<BR>
                         <div class='withBox'><span>prymeUI</span>
                             <BR>
                             <center>
-                                <select id='dropBox2' name='dropBox2' size='2'>
+                                <select id='dropBox2' name='dropBox2' size='3'>
                                     <option value='1'>Option 1</option>
                                     <option value='2' selected='selected'>Option 2</option>
                                     <option value='3'>Option 3</option>

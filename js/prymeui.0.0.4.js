@@ -66,6 +66,11 @@ function createPrymeElement(t){
        if($(this).is(':disabled')){
        prymeString+=" disable";    
        }
+       if($(this).prop('autofocus')){
+       prymeString+=" focus";    
+       }
+       
+      
        if($(this).attr('size')){
        prymeString+=" sizeBox";    
        }
@@ -109,9 +114,8 @@ $( document ).on( "click",".prymeSelectBox#"+$(this).attr('id')+" span div", fun
        
        createPrymeElement($(this));
        if($(this).attr('size')){
-           
            $('.prymeSelectBox#'+$(this).attr('id')).children('span').css({overflow_y:'auto',height:$(this).attr('size')*1.5+"em"});
-
+           $('.prymeSelectBox.sizeBox#'+$(this).attr('id')).css("margin-bottom",$(this).attr('size')*1.5+"em");
        }
        
   
