@@ -208,9 +208,8 @@ height: 2em;
 line-height: 2em;
 padding: 0.2em;
 text-align: center;
-color: #000;
-text-shadow: 1px 1px 0px #000;
-background: lightcyan;
+color: #fff;
+background: lightgray;
 border-radius: 0.2em;
 white-space: nowrap;
 -moz-box-sizing: border-box;
@@ -242,7 +241,7 @@ left: -9999px;
 margin-bottom: 1em;
 }
 [data-prymetip].tip-up:before {
-border-color: lightcyan transparent transparent transparent;
+border-color: lightgray transparent transparent transparent;
 margin-bottom: 0;
 }
 [data-prymetip].tip-up:hover:after,
@@ -264,7 +263,7 @@ left: -9999px;
 margin-top: 1em;
 }
 [data-prymetip].tip-down:before {
-border-color: transparent transparent lightcyan transparent;
+border-color: transparent transparent lightgray transparent;
 margin-top: 0;
 }
 [data-prymetip].tip-down:hover:after,
@@ -286,7 +285,7 @@ left: 80%;
 margin-left: 1em;
 }
 [data-prymetip].tip-right:before {
-border-color: transparent lightcyan transparent transparent;
+border-color: transparent lightgray transparent transparent;
 margin-left: 0;
 }
 [data-prymetip].tip-right:hover:after,
@@ -312,7 +311,7 @@ right: 80%;
 margin-right: 1em;
 }
 [data-prymetip].tip-left:before {
-border-color: transparent transparent transparent lightcyan;
+border-color: transparent transparent transparent lightgray;
 margin-right: 0;
 }
 [data-prymetip].tip-left:hover:after,

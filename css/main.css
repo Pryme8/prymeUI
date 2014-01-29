@@ -52,7 +52,7 @@ body {
 
 .aboveFold h1{
     font-size: 240px;
-    color:#eee;
+    color:lightcyan;
     position: relative;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
@@ -62,7 +62,7 @@ body {
 
 .aboveFold h1 span{
     font-size: 0.2em;
-    color:#ddd;
+    color:lightsteelblue;
     position: absolute;
     bottom:0;
 }
