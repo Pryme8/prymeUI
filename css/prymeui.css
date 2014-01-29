@@ -33,7 +33,9 @@
     pointer-events: auto;
     text-align: left;
     margin-right: 0.5em;
-    
+    -webkit-user-select: none;
+    -moz-user-select:none;
+    -ms-user-slect:none;
   
 }
 
@@ -109,18 +111,25 @@
     color:#777;
         
 }
+
+.multiselect{
+    
+}
+
+
+
    
- .sizeBox span{
+ .sizeBox span, .multiselect span{
      overflow-y:auto;
    
      
  }
  
- .sizeBox span:before, .sizeBox span:after{
+ .sizeBox span:before, .sizeBox span:after, .multiselect span:before, .multiselect span:after{
      display:none;
      clear:both;
  }
- .sizeBox span div{
+ .sizeBox span div,.multiselect span div{
      display:block;
      clear:both;
      
@@ -166,6 +175,21 @@
     display:block;
     color: #7BACD2;
     
+   }
+   
+    .lastSelected{
+       position: relative;
+   }
+   
+   .lastSelected:after{
+      pointer-events: none;
+      position: absolute;
+      content:'';
+      left:1px;
+      right:1px;
+      top:1px;
+      bottom:1px;
+      border:thin dotted lightblue;
    }
  
  /* INPUT BOX */

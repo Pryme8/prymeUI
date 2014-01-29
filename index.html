@@ -16,7 +16,7 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
     <script src="js/run_prettify.js"></script>
 
     <script src="js/main.js"></script>
-    <script src="js/prymeui.0.0.4.js"></script>
+    <script src="js/prymeui.0.0.7.js"></script>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,7 +27,7 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
     <div class='wrapFix'>
         <div class='aboveFold'>
             <BR>
-            <h1>prymeUI<span>a jQuery plugin!</span><span>version 0.0.4</span></h1>
+            <h1>prymeUI<span>a jQuery plugin!</span><span>version 0.0.6</span></h1>
             <BR>
             <div class='contentBox'><span class='titleSpan'>Usage:</span>
                 <BR>$(target).prymeui();</div>
@@ -60,9 +60,55 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
             <div class='rightCol'>
 
                 <div class='contentBox exampleSection' id='Input_Elements'><span class='titleSpan'>//Input Elements</span>
+                    
+                                            Support:
+                        <ul class='clearfix'>
+                            <li class='noSupport'>button<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>checkbox<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>color<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>date<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>datetime<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>datetime-local<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>email<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>file<BR><span>This will be fixed soon.</span></li>
+                            <li class='untestedSupport'>hidden<BR><span>I dont see why this would be broken, or why you would need prymeUI to do anything to a hidden field... but lets say you ran prymeUI on the whole document this should not be a problem.</span></li>
+                            <li class='noSupport'>image<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>month<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>number<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>password<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>radio<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>range<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>reset<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>search<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>submit<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>tel<BR><span>This will be fixed soon.</span></li>
+                            <li class='yesSupport'>text<BR><span>I will be adding all of the new features to the text element soon.  It has basic support for now.</span></li>
+                            <li class='yesSupport'>select<BR><span>Most of this element is tested and implemented.</span></li>
+                            <li class='noSupport'>time<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>url<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>week<BR><span>This will be fixed soon.</span></li>                            
+                        </ul>
 
                     <BR>
-                    <div class='contentBox exampleSection' id='input'><span class='titleSpan'>&#60;input&#62;</span>
+                    <div class='contentBox exampleSection' id='input'><span class='titleSpan'>&#60;input[type=text]&#62;</span>
+                        Support:
+                        <ul class='clearfix'>
+                            <li class='yesSupport'>Name<BR><span>Passes the element name from the original object</span></li>
+                            <li class='yesSupport'>ID<BR><span>Passes the element id from the original object</span></li>
+                            <li class='yesSupport'>Value<BR><span>Passes the original value of the element and makes the prymeElement set to that value</span></li>
+                            <li class='noSupport'>maxlength<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>autofocus<BR><span>Checks for the attribute autofocus set in the original Element.</span></li>
+                            <li class='noSupport'>disabled<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>readOnly<BR><span>This will be fixed soon.</span></li>
+                            <li class='noSupport'>autocomplete<BR><span>This will be fixed soon.</span></li>
+                            <li class='untestedSupport'>form<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
+                            <li class='noSupport'>formnovalidate<BR><span>I dont even know what the heck this is.</span></li>
+                            <li class='untestedSupport'>required<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
+                            <li class='noSupport'>size<BR><span>sets the size of the input by number of charicters</span></li>
+                            <li class='noSupport'>width<BR><span>sets the size of the input by pxls (or %?)</span></li>
+                        </ul>
+                        
+                        Standard Text Input Box<BR>
                         <!--?prettify lang=html?-->
                         <pre class="prettyprint lang-basic"><code>&#60;input id='inputText' name='inputText' type='text' placeholder='input box...' value=''&#62;</code></pre> 
 
@@ -85,27 +131,27 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
                     <BR>
 
                     <div class='contentBox exampleSection' id='select'><span class='titleSpan'>&#60;select&#62;</span>
-                        Supports:
-                        <ul>
+                        Support:
+                        <ul class='clearfix'>
                             <li class='yesSupport'>Name<BR><span>Passes the element name from the original object</span></li>
                             <li class='yesSupport'>ID<BR><span>Passes the element id from the original object</span></li>
                             <li class='yesSupport'>Value<BR><span>Passes the original value of the element and makes the prymeElement set to that value</span></li>
                             <li class='yesSupport'>autofocus<BR><span>Checks for the attribute autofocus set in the original Element.</span></li>
                             <li class='yesSupport'>disabled<BR><span>Checks to see if the element is disabled and if so adds the class 'disable' to the prymeElement.<BR>---I will be looking to add a listener for when ever this elements original is changed with script to be disabled or enabled that the prymeElement will follow suit.</span></li>
                             <li class='untestedSupport'>form<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
-                            <li class='noSupport'>multiple</li>
+                            <li class='yesSupport'>multiple<BR><span>Allows the user to select multiple options, ctrl to add/remove single objects, hold ctrl-shift to do multiple at once from the last selected element.</span></li>
                             <li class='untestedSupport'>required<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
-                            <li class='yesSupport'>size</li>
+                            <li class='yesSupport'>size<BR><span>Sets the size of the select box, to a number of objects.  Great to use with multiselect boxes!</span></li>
                         </ul>
                         
-                        
+Standard DropBox...<BR>                       
                         <!--?prettify lang=html?-->
                         <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'&#62;
 &#60;option value='1'&#62;Option 1&#60;/option&#62;
 &#60;option value='2' selected='selected'&#62;Option 2&#60;/option&#62;
 &#60;option value='3'&#62;Option 3&#60;/option&#62;
 &#60;/select&#62;</code></pre>
-Standard DropBox...<BR>
+
                         <div class='withoutBox'><span>regular</span>
                             <BR>
                             <center>
@@ -126,14 +172,15 @@ Standard DropBox...<BR>
                                 </select>
                             </center>
                         </div>
+ Select box with Size set.<BR>
  
                         <!--?prettify lang=html?-->
-                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox  size='3''&#62;
+                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'  size='3''&#62;
 &#60;option value='1'&#62;Option 1&#60;/option&#62;
 &#60;option value='2' selected='selected'&#62;Option 2&#60;/option&#62;
 &#60;option value='3'&#62;Option 3&#60;/option&#62;
 &#60;/select&#62;</code></pre>
-Select box with Size set.<BR>
+
                         <div class='withoutBox'><span>regular</span>
                             <BR>
                             <center>
@@ -154,6 +201,43 @@ Select box with Size set.<BR>
                                 </select>
                             </center>
                         </div>
+ Select box with multiple Enabled (if no size is set it will be set to 1/2 the number of options in the box rounded up.)<BR>
+ 
+                        <!--?prettify lang=html?-->
+                        <pre class="prettyprint lang-basic"><code>&#60;select id='dropBox' name='dropBox'  multiple'&#62;
+&#60;option value='1'&#62;Option 1&#60;/option&#62;
+&#60;option value='2' selected='selected'&#62;Option 2&#60;/option&#62;
+&#60;option value='3'&#62;Option 3&#60;/option&#62;
+&#60;option value='4'&#62;Option 4&#60;/option&#62;
+&#60;option value='5'&#62;Option 5&#60;/option&#62;
+&#60;/select&#62;</code></pre>
+
+                        <div class='withoutBox'><span>regular</span>
+                            <BR>
+                            <center>
+                                <select id='dropBox3' name='dropBox3' multiple>
+                                    <option value='1'>Option 1</option>
+                                    <option value='2' selected='selected'>Option 2</option>
+                                    <option value='3'>Option 3</option>
+                                    <option value='4' selected='selected'>Option 4</option>
+                                    <option value='5'>Option 5</option>
+                                </select>
+                                hold ctlr to select more.
+                            </center>
+                        </div>
+                        <div class='withBox'><span>prymeUI</span>
+                            <BR>
+                            <center>
+                                <select id='dropBox3' name='dropBox3' multiple>
+                                    <option value='1'>Option 1</option>
+                                    <option value='2' selected='selected'>Option 2</option>
+                                    <option value='3'>Option 3</option>
+                                    <option value='4' selected='selected'>Option 4</option>
+                                    <option value='5'>Option 5</option>
+                                </select>
+                            </center>
+                        </div>
+
                         <script>
                             $('#select .withBox').each(function(){
                             $(this).find('select').prymeUI();

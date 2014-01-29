@@ -411,7 +411,7 @@ body {
 }
  
 .contentBox ul{
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     list-style:none;
@@ -420,15 +420,20 @@ body {
 }
 .contentBox ul li {
     font-size: 18px;
-    margin-left: -1em;
+    margin-bottom: 0.2em;
+    margin-right: 0.5%;
     padding: 0.2em;
     border: thin solid #eee;
     margin-bottom: 0.1em;
     position: relative;
-    width:120px;
+    width:23%;
     height: 1em;
     overflow: hidden;
-    
+    display: inline-block;
+    vertical-align: top;
+    max-width: 33%;
+    background-color: #fff;
+    float:left;
 }
 
 .contentBox ul li span  {
@@ -440,19 +445,14 @@ body {
 }
 
 
-.contentBox ul li:hover,.contentBox ul li:focus,.contentBox ul li:active {
+.contentBox ul li:hover,.contentBox ul li:focus,.contentBox ul li:active,.contentBox ul li *:hover,.contentBox ul li *:focus,.contentBox ul li *:active {
 -webkit-transition: all 0.25s ease-in-out;
 -moz-transition: all 0.25s ease-in-out;
 transition: all 0.25s ease-in-out;
-    margin-left: -1em;
-    padding: 0.2em;
-    border: thin solid #eee;
-    margin-bottom: 0.1em;
-    position: relative;
-    width:100%;
     height: auto;
     overflow: auto;
-    
+    position: relative;
+    margin-bottom: auto;
 }
 
 
@@ -501,6 +501,31 @@ transition: all 0.25s ease-in-out;
         left:25%;
         width:75%;
          }
+         
+         
+         .contentBox ul li {
+    font-size: 18px;
+    margin-bottom: 0.2em;
+    margin-right: 0.5%;
+    padding: 0.2em;
+    border: thin solid #eee;
+    margin-bottom: 0.1em;
+    position: relative;
+    width:100%;
+    height: 1em;
+    overflow: hidden;
+    display: block;
+    vertical-align: top;
+    background-color: #fff;
+    float:none;
+    max-width: 205px;
+    margin-left: -1em;
+}
+         
+         
+         
+         
+         
   }
   
   /* Portrait */
