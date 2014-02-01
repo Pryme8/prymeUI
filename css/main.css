@@ -280,11 +280,11 @@ body {
  
  
  .belowFold .rightCol:before{
-    position: absolute;
+    position: fixed;
     top:-6%;
     bottom:-2%;
     right:0;
-    left:0px;
+    left:0;
     content: '';
     background: #fff;
     z-index: -1;
