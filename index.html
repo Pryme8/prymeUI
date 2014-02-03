@@ -27,7 +27,7 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
     <div class='wrapFix'>
         <div class='aboveFold'>
             <BR>
-            <h1>prymeUI<span>a jQuery plugin!</span><span>version 0.0.6</span></h1>
+            <h1>prymeUI<span>a jQuery plugin!</span><span>version 0.0.7</span></h1>
             <BR>
             <div class='contentBox'><span class='titleSpan'>Usage:</span>
                 <BR>$(target).prymeui();</div>
@@ -96,17 +96,16 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
                             <li class='yesSupport'>Name<BR><span>Passes the element name from the original object</span></li>
                             <li class='yesSupport'>ID<BR><span>Passes the element id from the original object</span></li>
                             <li class='yesSupport'>Value<BR><span>Passes the original value of the element and makes the prymeElement set to that value</span></li>
-                            <li class='noSupport'>maxlength<BR><span>This will be fixed soon.</span></li>
-                            <li class='noSupport'>autofocus<BR><span>Checks for the attribute autofocus set in the original Element.</span></li>
-                            <li class='noSupport'>disabled<BR><span>This will be fixed soon.</span></li>
-                            <li class='noSupport'>readOnly<BR><span>This will be fixed soon.</span></li>
+                            <li class='yesSupport'>maxlength<BR><span>Controls the number of charicters this input will accept</span></li>
+                            <li class='untestedSupport'>autofocus<BR><span>Checks for the attribute autofocus set in the original Element.</span></li>
+                            <li class='yesSupport'>disabled<BR><span>Removes pointer events, and then sets the opacity down on the element.</span></li>
+                            <li class='yesSupport'>readOnly<BR><span>Uses the built in DOM function of readonly on the new Input element.</span></li>
                             <li class='noSupport'>autocomplete<BR><span>This will be fixed soon.</span></li>
                             <li class='untestedSupport'>form<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
                             <li class='noSupport'>formnovalidate<BR><span>I dont even know what the heck this is.</span></li>
                             <li class='untestedSupport'>required<BR><span>Because the original element is just hidden this should in theory still work... has not been tested</span></li>
-                            <li class='noSupport'>size<BR><span>sets the size of the input by number of charicters</span></li>
-                            <li class='noSupport'>width<BR><span>sets the size of the input by pxls (or %?)</span></li>
-                        </ul>
+                            <li class='yesSupport'>size<BR><span>sets the size of the input by number of charicters</span></li>
+                            </ul>
                         <BR>
                         Standard Text Input Box<BR>
                         
@@ -122,12 +121,23 @@ Copyright 2014 Andrew V. Butt Sr, Pryme8@gmail.com
                         <div class='withBox'><span>prymeUI</span>
                             <BR>
                             <center>
-                                <input id='inputText' name='inputText' type='text' placeholder='input box...' value=''/>
+                                <input id='inputText' name='inputText' type='text' placeholder='input box...' value='' />
                             </center>
                         </div>
                         <script>
                             $('#input .withBox #inputText').prymeUI();
                         </script>
+                        <BR><BR>
+                        Special prymeUI Options:
+                         <ul class='clearfix'>
+                            <li class='noSupport'>stripTo<BR><span>Will work soon.</span></li>
+                            <li class='noSupport'>checkIs<BR><span>Will work soon.</span></li>
+                            
+                            </ul>
+                        <BR>
+                        
+                        
+                        
                     </div>
                     <BR>
 

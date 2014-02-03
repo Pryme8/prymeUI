@@ -211,12 +211,31 @@ function createPrymeElement(t){
    
    //INPUT ELEMENT
     if($(this).is('input')){
-       prymeString ="<input class='prymeInputBox' id='"+$(this).attr('id')+"' name='"+$(this).attr('name')+"' placeholder='"+$(this).attr('placeholder')+"' value='"+$(this).val()+"'>";
+       prymeString ="<input class='prymeInputBox";
+       if($(this).is(':disabled')){
+       prymeString+=" disable";    
+       }
+       prymeString +="' id='"+$(this).attr('id')+"' name='"+$(this).attr('name')+"' placeholder='"+$(this).attr('placeholder')+"' value='"+$(this).val()+"' maxlength='"+$(this).attr('maxlength')+"' autofocus='"+$(this).attr('autofocus')+"'"; 
+       if($(this).prop('readonly')){
+        prymeString += " readonly";   
+       }
+       
+           
+       
+       prymeString += " >";
        $( document ).on( "change",".prymeInputBox#"+$(this).attr('id'), function(  ) {
                originalElement.val($(this).val());
         });
        prymeString +="</input>";      
        createPrymeElement($(this));
+       
+        if($(this).prop('size')){
+        $('.prymeInputBox#'+$(this).attr('id')).css({width:$(this).attr('size')+'em'});
+        }
+        if($(this).prop('width')){
+        $('.prymeInputBox#'+$(this).attr('id')).css({width:$(this).attr('width')});
+        } 
+      
    }
    
     
